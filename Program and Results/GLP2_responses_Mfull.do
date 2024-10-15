@@ -8,10 +8,6 @@ merge 1:1  ifs year   using   JSTdatasetR6.dta , keep(3) nogen
 
 merge 1:1  ifs year   using   dcapb.dta , keep(3) nogen
 
-merge 1:1  ifs year   using WID_Inc.dta , keep(3) nogen
-
-merge 1:1 iso year using BVX_annual_regdata.dta, keep(3) nogen
-
 gen dCAPB = dnlgxqa  
 
 xtset ifs year , yearly
